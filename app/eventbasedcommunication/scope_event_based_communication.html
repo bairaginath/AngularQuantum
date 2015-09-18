@@ -1,0 +1,30 @@
+<p>Event Based Communication using Emit and On</p>
+
+<div ng-controller="ParentsController" style="border:2px solid #E75D5C; padding:5px;">
+    <h1>Parent Controller</h1>
+    <p>Emit Message : {{message}}</p>
+    <br />
+    <div ng-controller="ChildController" style="border:2px solid #428bca;padding:5px;">
+        <h1>Child Controller</h1>
+        <input ng-model="msg">
+        <button ng-click="handleClick(msg);">Emit</button>
+    </div>
+</div>
+
+<p> Event Based Communication using BroadCase and On </p>
+
+
+<div ng-controller="ParentControllerBroadcast" style="border:2px solid #E75D5C; padding:5px;">
+    <h1>Parent Broadcast Controller</h1>
+    <input ng-model="msg">
+    <button ng-click="handleClick(msg);">Broadcast</button>
+    <br /><br />
+    <div ng-controller="ChildOneController" style="border:2px solid #428bca;padding:5px;">
+        <h1>Child Controller</h1>
+        <p>Broadcast Message : {{message1}}</p>
+    </div>
+    <div ng-controller="ChildTwoController" style="border:2px solid #428bca;padding:5px;">
+        <h1>Child Controller</h1>
+        <p>Broadcast Message : {{message2}}</p>
+    </div>
+</div>

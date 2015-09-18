@@ -1,0 +1,16 @@
+<p> parallel Emit event  based communication</p>
+
+<div ng-controller="ParentEmitController" style="border:2px solid #FF00FF; padding:5px;">
+    <h1>Parent Emit Controller</h1>
+    <p>Emit Message : {{message}}</p>
+<div ng-controller="ParallelOneEmitController" style="border:2px solid #E75D5C; padding:5px;">
+    <h1>Parallel One Emit Controller</h1>
+    <p>Emit Message : {{message1}}</p>
+</div>
+<div ng-controller="ParallelTwoEmitController" style="border:2px solid #428bca;padding:5px;">
+        <h1>Parallel One Emit Controller</h1>
+        <input ng-model="msg">
+        <button ng-click="handleClick(msg);">ParallelEmit</button>
+
+</div>
+</div>

@@ -1,0 +1,54 @@
+<p> Event Based Communication Root parent and chlid using Emit and on</p>
+
+
+
+<div ng-controller="ParentsRootScopeController" style="border:2px solid #E75D5C; padding:5px;">
+    <h1>Parent Root Scope Controller</h1>
+    <p>Emit Message : {{message}}</p>
+    <br />
+    <div ng-controller="ChildRootScopeController" style="border:2px solid #428bca;padding:5px;">
+        <h1>Child Root  Scope Controller</h1>
+        <input ng-model="msg">
+        <button ng-click="handleClickScope(msg);">ScopeToRootScopeEmit</button>
+        <input ng-model="msgRoot">
+        <button ng-click="handleClickRootScope(msgRoot);">RootScopeToRootScopeEmit</button>
+    </div>
+</div>
+
+<p> Event Based Communication  parent,chlid Root Scope and Scope child  using Emit and on</p>
+
+<div ng-controller="ParentsRootScopeController" style="border:2px solid #E75D5C; padding:5px;">
+    <h1>Parent Root Scope Controller</h1>
+    <p>Emit Message : {{message1}}</p>
+    <br />
+    <div ng-controller="ChildRootScopeController" style="border:2px solid #428bca;padding:5px;">
+        <h1>Child Root Scope Controller</h1>
+        <p>Emit Message : {{message2}}</p>
+        <div ng-controller="ChildScopeController" style="border:2px solid #FF00FF;padding:5px;">
+            <h1>Child Scope Controller</h1>
+            <input ng-model="msg">
+            <button ng-click="handleClick(msg);">Emit</button>
+        </div>
+    </div>
+</div>
+
+
+<p> Event Based Communication using parent,child RootScope and Child Scope BroadCase and On </p>
+
+
+<div ng-controller="ParentRootScopeControllerBroadcast" style="border:2px solid #E75D5C; padding:5px;">
+    <h1>Parent Root Scope ControllerBroadcast</h1>
+    <input ng-model="msg">
+    <button ng-click="handleClick(msg);">Broadcast</button>
+    <br /><br />
+    <div ng-controller="ChildRootScopeControllerBroadcast" style="border:2px solid #428bca;padding:5px;">
+        <h1>Child Root Scope ControllerBroadcast</h1>
+        <p>Broadcast Message : {{message3}}</p>
+    </div>
+    <div ng-controller="ChildScopeControllerBroadcast" style="border:2px solid #428bca;padding:5px;">
+        <h1>Child Scope ControllerBroadcast</h1>
+        <p>Broadcast Message : {{message4}}</p>
+    </div>
+</div>
+
+
