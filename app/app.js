@@ -15,7 +15,8 @@ angular.module('myApp', [
   'myApp.scope_eventbasedcommunication',
   'myApp.rootscope_eventbasedcommunication',
   'myApp.MyTest',
-    'myApp.parallel_eventbasedcommunication'
+  'myApp.parallel_eventbasedcommunication',
+  'myApp.myjs'
 
 ]).
 config(['$routeProvider', function($routeProvider) {
